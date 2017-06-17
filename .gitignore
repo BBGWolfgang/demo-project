@@ -1,13 +1,8 @@
-CMakeCache.txt
-CMakeFiles
-cmake_install.cmake
-**/CMakeFiles/
-**/cmake_install.cmake
-Makefile
-CMakeHelloWorld
-*.a
-**/*.a
-build/**
+# Editors
+*~
+
+# Compilation artifcates
+cmake.bld/**
 
 # Prerequisites
 *.d

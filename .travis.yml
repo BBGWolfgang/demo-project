@@ -1,0 +1,3 @@
+language: cpp
+script:
+    - mkdir cmake.bld && cd cmake.bld && cmake .. && cmake --build . && ./runTests
