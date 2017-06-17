@@ -4,7 +4,7 @@ compiler:
 os: linux
 dist: trusty
 install:
-    - sudo apt-get install -y libgtest-dev
+    - sudo apt-get install -y libgtest-dev cppcheck
     - cd /usr/src/gtest
     - sudo cmake CMakeLists.txt
     - sudo make
