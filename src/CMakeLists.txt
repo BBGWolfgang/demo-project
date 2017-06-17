@@ -1,6 +1,6 @@
-add_library (Hello 
+add_library (src 
   Speaker.h
   Speaker.cpp)
 
-install (TARGETS Hello DESTINATION bin)
+install (TARGETS src DESTINATION bin)
 install (FILES Speaker.h DESTINATION include)
