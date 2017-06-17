@@ -1,3 +1,5 @@
+https://travis-ci.org/BBGWolfgang/demo-project.svg?branch=master
+
 ## THIS IS A DEMO PROJECT
 ## IT IS BASED ON https://github.com/jameskbride/cmake-hello-world
 
