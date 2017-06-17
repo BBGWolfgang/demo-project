@@ -1,5 +1,5 @@
 .PHONY: all
-all: cmake.bld prebuild build test
+all: cppcheck cmake.bld prebuild build test
 
 .PHONY: prebuild
 prebuild: cmake.bld
@@ -8,6 +8,11 @@ prebuild: cmake.bld
 .PHONY: build
 build: cmake.bld
 	cd cmake.bld && make
+
+.PHONY: cppcheck
+cppcheck:
+	cppcheck src
+	cppcheck app
 
 .PHONY: test
 test: build
