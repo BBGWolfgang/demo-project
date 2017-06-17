@@ -1,6 +1,6 @@
 add_library (src 
-  Speaker.h
-  Speaker.cpp)
+  Math.h
+  Math.cpp)
 
 install (TARGETS src DESTINATION bin)
-install (FILES Speaker.h DESTINATION include)
+install (FILES Math.h DESTINATION include)

@@ -1,9 +1,9 @@
 cmake_minimum_required (VERSION 2.8)
-project (CMakeHelloWorld)
+project (DemoProject)
 
 #version number
-set (CMakeHelloWorld_VERSION_MAJOR 1)
-set (CMakeHelloWorld_VERSION_MINOR 0)
+set (DemoProject_VERSION_MAJOR 1)
+set (DemoProject_VERSION_MINOR 0)
 
 #include the subdirectory containing our libs
 add_subdirectory (src)
@@ -14,13 +14,15 @@ enable_testing()
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
-add_executable(runTests tests/HelloWorld.t.cpp)
+# build test
+add_executable(runTests tests/Math.t.cpp)
 target_link_libraries(runTests ${GTEST_LIBRARIES} pthread)
+target_link_libraries (runTests src)
 
-#indicate the entry point for the executable
-add_executable (CMakeHelloWorld app/HelloWorld.m.cpp)
+# build app
+add_executable (DemoProject app/DemoProject.m.cpp)
+target_link_libraries (DemoProject src)
 
-# Indicate which libraries to include during the link process.
-target_link_libraries (CMakeHelloWorld src)
-
-install (TARGETS CMakeHelloWorld DESTINATION bin)
+# install apps
+install (TARGETS DemoProject DESTINATION bin)
+install (TARGETS runTests DESTINATION bin)

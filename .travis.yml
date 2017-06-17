@@ -12,4 +12,4 @@ install:
     - sudo cp libgtest_main.a libgtest.a /usr/lib/
     - cd "${TRAVIS_BUILD_DIR}"
 script:
-    - mkdir cmake.bld && cd cmake.bld && cmake .. && cmake --build . && ./runTests
+    - make
