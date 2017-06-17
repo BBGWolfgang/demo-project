@@ -1,4 +1,4 @@
-https://travis-ci.org/BBGWolfgang/demo-project.svg?branch=master
+[![Build Status](https://travis-ci.org/BBGWolfgang/demo-project.svg?branch=master)](https://travis-ci.org/BBGWolfgang/demo-project)
 
 ## THIS IS A DEMO PROJECT
 ## IT IS BASED ON https://github.com/jameskbride/cmake-hello-world
