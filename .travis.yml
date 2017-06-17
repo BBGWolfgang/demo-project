@@ -1,3 +1,15 @@
 language: cpp
+compiler:
+    - gcc
+os: linux
+dist: trusty
+install:
+    - sudo apt-get install -y libgtest-dev
+    - cd /usr/src/gtest
+    - sudo cmake CMakeLists.txt
+    - sudo make
+    - ls -lart
+    - sudo cp libgtest_main.a libgtest.a /usr/lib/
+    - cd "${TRAVIS_BUILD_DIR}"
 script:
     - mkdir cmake.bld && cd cmake.bld && cmake .. && cmake --build . && ./runTests
