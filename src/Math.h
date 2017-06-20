@@ -5,6 +5,7 @@ namespace DemoProject {
 
 struct Math {
   static double add(const double a, const double b);
+  static double multiply(const double a, const double b);
 };
 
 }  // close namespace DemoProject
